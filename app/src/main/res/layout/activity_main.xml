@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Welcome text -->
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Restaurant App!"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Button to navigate to Table Booking -->
+    <Button
+        android:id="@+id/button_booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bookningar"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Button to navigate to Moment 1 (Appetizers) -->
+    <Button
+        android:id="@+id/button_moment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moment 1 - Appetizers"
+        app:layout_constraintTop_toBottomOf="@+id/button_booking"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Button to navigate to Moment 2 (Main Course) -->
+    <Button
+        android:id="@+id/button_moment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moment 2 - Main Course"
+        app:layout_constraintTop_toBottomOf="@+id/button_moment1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Button to navigate to Kitchen View -->
+    <Button
+        android:id="@+id/button_kitchen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kitchen View"
+        app:layout_constraintTop_toBottomOf="@+id/button_moment2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Button to navigate to Central Screen -->
+    <Button
+        android:id="@+id/button_central"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Central Screen"
+        app:layout_constraintTop_toBottomOf="@+id/button_kitchen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
